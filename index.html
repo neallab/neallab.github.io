@@ -55,8 +55,7 @@
         }
 
         .days {
-            background: #286B7B;
-            /*color: #000000;*/
+            background: #814F76;
         }
 
         .hours {
@@ -74,7 +73,7 @@
 
         .numbers {
             font-family: "Montserrat", sans-serif;
-            color: #000000;
+            color: #ffffff;
             font-size: 4em;
         }
 
@@ -272,8 +271,13 @@
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 <script id="rendered-js">
     const year = new Date().getFullYear();
-    const dDay = new Date(2022, 1, 1).getTime();
+    // const dDay = new Date(2020, 6, 2).getTime();
+
+    const dDay = new Date(2020, 5, 1).getTime();
+
     console.log(dDay);
+
+
 
     // countdown
     let timer = setInterval(function () {
@@ -282,7 +286,7 @@
         const today = new Date().getTime();
 
         // get the difference
-        const diff = dDay - today;
+        const diff = today - dDay;
 
         // math
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -294,12 +298,6 @@
         document.getElementById("timer").innerHTML =
             "<div class=\"days\"> \
             <div class=\"numbers\">" + days + "</div>days</div> \
-            <div class=\"hours\"> \
-              <div class=\"numbers\">" + hours + "</div>hours</div> \
-            <div class=\"minutes\"> \
-              <div class=\"numbers\">" + minutes + "</div>minutes</div> \
-            <div class=\"seconds\"> \
-              <div class=\"numbers\">" + seconds + "</div>seconds</div> \
             </div>";
 
     }, 1000);
