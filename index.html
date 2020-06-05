@@ -16,7 +16,7 @@
 
         body {
             display: grid;
-            background: #183059;
+            background: #000000;
         }
 
         .container {
@@ -44,7 +44,7 @@
             font-family: "Lato", sans-serif;
             font-size: .7em;
             letter-spacing: 5px;
-            margin-top: 25%;
+            margin-top: 5%;
         }
 
         .days, .hours, .minutes, .seconds {
@@ -55,25 +55,26 @@
         }
 
         .days {
-            background: #EF2F3C;
+            background: #286B7B;
+            /*color: #000000;*/
         }
 
         .hours {
-            background: #F6F4F3;
-            color: #183059;
+            background: #548BA1;
+            /*color: #000000;*/
         }
 
         .minutes {
-            background: #276FBF;
+            background: #96C4D8;
         }
 
         .seconds {
-            background: #F0A202;
+            background: #CBE3EE;
         }
 
         .numbers {
             font-family: "Montserrat", sans-serif;
-            color: #183059;
+            color: #000000;
             font-size: 4em;
         }
 
@@ -234,33 +235,34 @@
 </head>
 <body translate="no">
 <div class="container">
-    <div class="balloon white">
-        <div class="star-red"></div>
-        <div class="face">
-            <div class="eye"></div>
-            <div class="mouth happy"></div>
-        </div>
-        <div class="triangle"></div>
-        <div class="string"></div>
-    </div>
-    <div class="balloon red">
-        <div class="star"></div>
-        <div class="face">
-            <div class="eye"></div>
-            <div class="mouth happy"></div>
-        </div>
-        <div class="triangle"></div>
-        <div class="string"></div>
-    </div>
-    <div class="balloon blue">
-        <div class="star"></div>
-        <div class="face">
-            <div class="eye"></div>
-            <div class="mouth happy"></div>
-        </div>
-        <div class="triangle"></div>
-        <div class="string"></div>
-    </div>
+<!--    <div class="balloon white">-->
+<!--        <div class="star-red"></div>-->
+<!--        <div class="face">-->
+<!--            <div class="eye"></div>-->
+<!--            <div class="mouth happy"></div>-->
+<!--        </div>-->
+<!--        <div class="triangle"></div>-->
+<!--        <div class="string"></div>-->
+<!--    </div>-->
+<!--    <div class="balloon red">-->
+<!--        <div class="star"></div>-->
+<!--        <div class="face">-->
+<!--            <div class="eye"></div>-->
+<!--            <div class="mouth happy"></div>-->
+<!--        </div>-->
+<!--        <div class="triangle"></div>-->
+<!--        <div class="string"></div>-->
+<!--    </div>-->
+<!--    <div class="balloon blue">-->
+<!--        <div class="star"></div>-->
+<!--        <div class="face">-->
+<!--            <div class="eye"></div>-->
+<!--            <div class="mouth happy"></div>-->
+<!--        </div>-->
+<!--        <div class="triangle"></div>-->
+<!--        <div class="string"></div>-->
+<!--    </div>-->
+<!--    <h1>Jamie, I love you</h1>-->
     <div id="timer"></div>
     <h1>Jamie, I miss you</h1>
 </div>
@@ -292,13 +294,13 @@
         document.getElementById("timer").innerHTML =
             "<div class=\"days\"> \
             <div class=\"numbers\">" + days + "</div>days</div> \
-<div class=\"hours\"> \
-  <div class=\"numbers\">" + hours + "</div>hours</div> \
-<div class=\"minutes\"> \
-  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
-<div class=\"seconds\"> \
-  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
-</div>";
+            <div class=\"hours\"> \
+              <div class=\"numbers\">" + hours + "</div>hours</div> \
+            <div class=\"minutes\"> \
+              <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+            <div class=\"seconds\"> \
+              <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+            </div>";
 
     }, 1000);
     //# sourceURL=pen.js
