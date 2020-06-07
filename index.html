@@ -31,7 +31,7 @@
             font-family: "Lato", sans-serif;
             text-align: center;
             margin-top: 2em;
-            font-size: 2em;
+            font-size: 3em;
             text-transform: uppercase;
             letter-spacing: 5px;
             color: #F6F4F3;
@@ -47,159 +47,21 @@
             margin-top: 5%;
         }
 
-        .days, .hours, .minutes, .seconds {
+        .days {
             display: inline-block;
             padding: 20px;
-            width: 400px;
+            width: 300px;
             border-radius: 5px;
         }
 
         .days {
-            background: #814F76;
-        }
-
-        .hours {
-            background: #548BA1;
-            /*color: #000000;*/
-        }
-
-        .minutes {
-            background: #96C4D8;
-        }
-
-        .seconds {
-            background: #CBE3EE;
+            background: #ffc0cb;
         }
 
         .numbers {
             font-family: "Montserrat", sans-serif;
             color: #ffffff;
             font-size: 4em;
-        }
-
-        .white {
-            position: absolute;
-            background: #F6F4F3;
-            height: 85px;
-            width: 75px;
-            left: 30%;
-            top: 2%;
-        }
-        .white .triangle {
-            border-bottom: 14px solid #F6F4F3;
-        }
-        .white .string {
-            background: #F6F4F3;
-            border: 1px solid #F6F4F3;
-        }
-
-        .red {
-            position: absolute;
-            background: #EF2F3C;
-            left: 18%;
-            top: 9%;
-            height: 65px;
-            width: 70px;
-        }
-        .red .triangle {
-            border-bottom: 14px solid #EF2F3C;
-        }
-        .red .string {
-            background: #EF2F3C;
-            border: 1px solid #EF2F3C;
-        }
-
-        .blue {
-            position: absolute;
-            background: #276FBF;
-            height: 80px;
-            width: 80px;
-            left: 60%;
-            top: 5%;
-        }
-        .blue .triangle {
-            border-bottom: 14px solid #276FBF;
-        }
-        .blue .string {
-            background: #276FBF;
-            border: 1px solid #276FBF;
-        }
-
-        .balloon {
-            border: 1px solid #000;
-            border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
-            z-index: 2;
-        }
-
-        .eye {
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            top: 40%;
-            left: 22%;
-            background: #000;
-            border-radius: 50%;
-        }
-        .eye:after {
-            content: '';
-            left: 35px;
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #000;
-            position: absolute;
-        }
-
-        .mouth {
-            position: absolute;
-            top: 45%;
-            left: 43%;
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-        }
-
-        .happy {
-            border: 2px solid;
-            border-color: transparent #000 #000 transparent;
-            transform: rotate(45deg);
-        }
-
-        .triangle {
-            position: absolute;
-            left: 40%;
-            bottom: -10%;
-            width: 0;
-            height: 0;
-            border-left: 7px solid transparent;
-            border-right: 7px solid transparent;
-        }
-
-        .string {
-            position: absolute;
-            height: 70px;
-            width: 1px;
-            left: 48%;
-            top: 100%;
-            z-index: -1;
-        }
-
-        .star {
-            width: 20px;
-            height: 20px;
-            background: #F6F4F3;
-            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-        }
-
-        .star-red {
-            width: 30px;
-            height: 30px;
-            margin-left: 51px;
-            margin-top: -5px;
-            background: #EF2F3C;
-            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
         }
 
         footer {
@@ -234,36 +96,7 @@
 </head>
 <body translate="no">
 <div class="container">
-<!--    <div class="balloon white">-->
-<!--        <div class="star-red"></div>-->
-<!--        <div class="face">-->
-<!--            <div class="eye"></div>-->
-<!--            <div class="mouth happy"></div>-->
-<!--        </div>-->
-<!--        <div class="triangle"></div>-->
-<!--        <div class="string"></div>-->
-<!--    </div>-->
-<!--    <div class="balloon red">-->
-<!--        <div class="star"></div>-->
-<!--        <div class="face">-->
-<!--            <div class="eye"></div>-->
-<!--            <div class="mouth happy"></div>-->
-<!--        </div>-->
-<!--        <div class="triangle"></div>-->
-<!--        <div class="string"></div>-->
-<!--    </div>-->
-<!--    <div class="balloon blue">-->
-<!--        <div class="star"></div>-->
-<!--        <div class="face">-->
-<!--            <div class="eye"></div>-->
-<!--            <div class="mouth happy"></div>-->
-<!--        </div>-->
-<!--        <div class="triangle"></div>-->
-<!--        <div class="string"></div>-->
-<!--    </div>-->
-<!--    <h1>Jamie, I love you</h1>-->
     <div id="timer"></div>
-<!--    <h1>Jamie, I miss you</h1>-->
 </div>
 <footer>
     <p>made by <a href="https://neallab.github.io"> Neal</a> ♡
@@ -271,13 +104,11 @@
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 <script id="rendered-js">
     const year = new Date().getFullYear();
-    // const dDay = new Date(2020, 6, 2).getTime();
 
+    // 6월 2일을 월-1 일+2로 처
     const dDay = new Date(2020, 5, 1).getTime();
 
     console.log(dDay);
-
-
 
     // countdown
     let timer = setInterval(function () {
@@ -290,19 +121,15 @@
 
         // math
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-        let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
-        let seconds = Math.floor(diff % (1000 * 60) / 1000);
 
         // display
         document.getElementById("timer").innerHTML =
             "<div class=\"days\"> \
-            <div class=\"numbers\">" + days + "</div>Jamie, I love you</div> \
+            <div class=\"numbers\">+" + days + "</div>Jamie, I love you</div> \
             <h1></h1>\
             </div>";
 
     }, 1000);
-    //# sourceURL=pen.js
 </script>
 </body>
 </html>
